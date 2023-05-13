@@ -3,26 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
+    app:startDestination="@id/studyFragment">
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.u_nity.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
+        android:id="@+id/studyFragment"
+        android:name="com.example.u_nity.StudyFragment"
+        android:label="fragment_subject"
+        tools:layout="@layout/fragment_subject" >
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_studyFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.u_nity.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+        android:id="@+id/subjectFragment"
+        android:name="com.example.u_nity.SubjectFragment"
+        android:label="fragment_subject"
+        tools:layout="@layout/fragment_subject" >
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_subjectFragment_to_studyFragment"
+            app:destination="@id/studyFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/studyHolderFragment"
+        android:name="com.example.u_nity.studyHolderFragment"
+        android:label="fragment_study_holder"
+        tools:layout="@layout/fragment_study_holder" />
 </navigation>

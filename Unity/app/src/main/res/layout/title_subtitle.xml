@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="IHC"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Human Computer Interaction"
+                android:textColor="#9C9C9C" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
