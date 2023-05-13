@@ -16,8 +16,8 @@ class SubjectFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_subject, container, false)
-        val button = view.findViewById<ImageButton>(R.id.backButton)
-        button.setOnClickListener {
+        val backButton = view.findViewById<ImageButton>(R.id.backButton)
+        backButton.setOnClickListener {
             findNavController().navigate(R.id.action_subjectFragment_to_studyFragment)
         }
         return view
