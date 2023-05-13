@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/top_bar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <include
+                    android:id="@+id/title_subtitle"
+                    layout="@layout/title_subtitle"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:clipToPadding="false"
+                    android:scrollbarSize="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include
+                            layout="@layout/material_header"/>
+
+                            <androidx.cardview.widget.CardView
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:clipToOutline="false"
+                                android:clipToPadding="false"
+                                app:cardUseCompatPadding="true"
+                                android:layout_marginTop="10dp">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/pdf_preview"/>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/gradient"
+                                    android:alpha="0.6"
+                                    android:layout_gravity="bottom"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:textColor="@color/white"
+                                    android:text="CONTENT PREVIEW"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="20sp"
+                                    android:padding="15dp"/>
+                            </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:src="@drawable/heart"
+                                app:tint="@color/black" />
+
+                            <Button
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:text="Download"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/black_rectangle_border"/>
+
+                            <Button
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:text="Add to library"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/black_rectangle_border"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
