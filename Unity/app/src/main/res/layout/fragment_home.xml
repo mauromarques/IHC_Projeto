@@ -39,6 +39,7 @@
                     android:scrollbarSize="0dp">
 
                     <LinearLayout
+                        android:id="@+id/home_subject_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
@@ -82,6 +83,7 @@
                     android:scrollbarSize="0dp">
 
                     <LinearLayout
+                        android:id="@+id/home_material_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">

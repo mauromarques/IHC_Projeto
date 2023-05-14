@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
+import androidx.navigation.fragment.findNavController
 
 class SubjectStudyFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,11 +24,26 @@ class SubjectStudyFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.course_study, container, false)
 
+        val lib_title = view.findViewById<View>(R.id.library_title)
+        val see_all = lib_title.findViewById<View>(R.id.library_see_all)
         val browse_button = view.findViewById<View>(R.id.library_search_button)
         val upload_button = view.findViewById<View>(R.id.library_upload_button)
 
         browse_button.setOnClickListener{
-            // open LibraryFragment
+            findNavController().navigate(R.id.action_subjectFragment_to_browseOnlineFragment)
+        }
+
+        see_all.setOnClickListener{
+            findNavController().navigate(R.id.action_subjectFragment_to_libraryFragment)
+        }
+
+        val mat_layout = view.findViewById<LinearLayout>(R.id.study_material_layout)
+
+        for (i in 0 until mat_layout.childCount) {
+            val childView = mat_layout.getChildAt(i)
+            childView.setOnClickListener {
+                findNavController().navigate(R.id.action_subjectFragment_to_materialFragment2)
+            }
         }
 
 

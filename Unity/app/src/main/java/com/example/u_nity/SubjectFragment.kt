@@ -61,6 +61,19 @@ class SubjectFragment : Fragment() {
             forum_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
         }
 
+        forum_button.setOnClickListener{
+
+            study_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#B0B0B0")))
+            summary_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#B0B0B0")))
+            forum_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#000000")))
+
+            study_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
+            summary_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
+            forum_button.backgroundTintList = null
+
+            findNavController().navigate(R.id.action_subjectFragment_to_forumFragment)
+        }
+
         return view
     }
 }

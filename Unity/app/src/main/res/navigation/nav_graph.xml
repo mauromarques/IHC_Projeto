@@ -21,10 +21,72 @@
         <action
             android:id="@+id/action_subjectFragment_to_studyFragment"
             app:destination="@id/studyFragment" />
+        <action
+            android:id="@+id/action_subjectFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+        <action
+            android:id="@+id/action_subjectFragment_to_browseOnlineFragment"
+            app:destination="@id/browseOnlineFragment" />
+        <action
+            android:id="@+id/action_subjectFragment_to_forumFragment"
+            app:destination="@id/forumFragment" />
+        <action
+            android:id="@+id/action_subjectFragment_to_materialFragment2"
+            app:destination="@id/materialFragment" />
     </fragment>
     <fragment
         android:id="@+id/studyHolderFragment"
         android:name="com.example.u_nity.studyHolderFragment"
         android:label="fragment_study_holder"
         tools:layout="@layout/fragment_study_holder" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.u_nity.LibraryFragment"
+        android:label="LibraryFragment" >
+        <action
+            android:id="@+id/action_libraryFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/browseOnlineFragment"
+        android:name="com.example.u_nity.BrowseOnlineFragment"
+        android:label="BrowseOnlineFragment" >
+        <action
+            android:id="@+id/action_browseOnlineFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_browseOnlineFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forumFragment"
+        android:name="com.example.u_nity.ForumFragment"
+        android:label="ForumFragment" >
+        <action
+            android:id="@+id/action_forumFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialFragment"
+        android:name="com.example.u_nity.MaterialFragment"
+        android:label="MaterialFragment" >
+        <action
+            android:id="@+id/action_materialFragment_pop"
+            app:popUpTo="@id/materialFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.u_nity.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+    </fragment>
 </navigation>

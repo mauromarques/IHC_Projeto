@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.navigation.fragment.findNavController
 
 class MaterialFragment : Fragment() {
 
@@ -17,6 +19,13 @@ class MaterialFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_material, container, false)
+        val view = inflater.inflate(R.layout.fragment_material, container, false)
+
+        val backButton = view.findViewById<ImageButton>(R.id.backButton)
+        backButton.setOnClickListener {
+            findNavController().navigate(R.id.action_materialFragment_pop)
+        }
+
+        return view
     }
 }
