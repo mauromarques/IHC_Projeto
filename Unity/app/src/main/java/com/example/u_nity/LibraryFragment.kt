@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 class LibraryFragment : Fragment() {
@@ -21,6 +22,14 @@ class LibraryFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_library, container, false)
+
+        val res1 = view.findViewById<View>(R.id.res1)
+        res1.findViewById<TextView>(R.id.textView5).text = "Nielsen Heuristics Book "
+        res1.findViewById<TextView>(R.id.resourceName).text = "(PDF)"
+
+        val res2 = view.findViewById<View>(R.id.res2)
+        res2.findViewById<TextView>(R.id.textView5).text = "Theory Exercise Sheet 2 "
+        res2.findViewById<TextView>(R.id.resourceName).text = "(PDF)"
 
         val backButton = view.findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {
@@ -40,7 +49,6 @@ class LibraryFragment : Fragment() {
                 findNavController().navigate(R.id.action_libraryFragment_to_materialFragment)
             }
         }
-
 
         return view
     }

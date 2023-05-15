@@ -48,6 +48,11 @@ class StudyFragment : Fragment() {
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.nav_container, subjectFrag)?.commit()*/
         }
+
+        sub3.setOnClickListener {
+            Log.d("MAMAMIA", "CLICK")
+            findNavController().navigate(R.id.action_studyFragment_to_subjectBDFragment)
+        }
         button.alpha = 0F
 
         return view

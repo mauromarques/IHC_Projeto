@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_studyFragment_to_subjectFragment"
             app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_studyFragment_to_subjectBDFragment"
+            app:destination="@id/subjectBDFragment" />
     </fragment>
     <fragment
         android:id="@+id/subjectFragment"
@@ -89,4 +92,14 @@
             android:id="@+id/action_homeFragment_to_subjectFragment"
             app:destination="@id/subjectFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/studyHolderDBFragment"
+        android:name="com.example.u_nity.StudyHolderDBFragment"
+        android:label="fragment_study_holder_d_b"
+        tools:layout="@layout/fragment_study_holder_d_b" />
+    <fragment
+        android:id="@+id/subjectBDFragment"
+        android:name="com.example.u_nity.SubjectBDFragment"
+        android:label="fragment_subject_b_d"
+        tools:layout="@layout/fragment_subject_b_d" />
 </navigation>

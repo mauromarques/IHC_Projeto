@@ -82,6 +82,7 @@
                             android:layout_marginTop="10dp">
 
                             <ImageButton
+                                android:id="@+id/heart"
                                 android:layout_width="50dp"
                                 android:layout_height="match_parent"
                                 android:background="@null"
@@ -89,6 +90,7 @@
                                 app:tint="@color/black" />
 
                             <Button
+                                android:id="@+id/download"
                                 android:layout_width="130dp"
                                 android:layout_height="match_parent"
                                 android:text="Download"
