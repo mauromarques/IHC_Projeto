@@ -10,16 +10,15 @@
         android:layout_height="fill_parent"
         android:background="@drawable/rectangle_shape"
         android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+
             <ImageView
+                android:id="@+id/imageB"
                 android:layout_marginLeft="15dp"
                 android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:src="@drawable/calendar"></ImageView>
-        </LinearLayout>
+                android:src="@drawable/calendar"
+                ></ImageView>
 
         <LinearLayout
             android:layout_width="200dp"
@@ -28,6 +27,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"
@@ -38,6 +38,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/sub11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"
@@ -48,6 +49,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/sub23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"

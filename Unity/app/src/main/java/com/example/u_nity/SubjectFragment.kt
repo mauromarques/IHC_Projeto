@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 
 class SubjectFragment : Fragment() {
@@ -49,11 +50,10 @@ class SubjectFragment : Fragment() {
             forum_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
         }
 
+        val summaryFragment = SubjectSummaryFragment()
         summary_button.setOnClickListener{
-
-            val fragment = SubjectSummaryFragment()
             val transaction = fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.course_frame_container,fragment)?.commit()
+            transaction?.replace(R.id.course_frame_container,summaryFragment)?.commit()
 
             study_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#B0B0B0")))
             summary_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#000000")))
@@ -62,6 +62,8 @@ class SubjectFragment : Fragment() {
             study_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
             summary_button.backgroundTintList = null
             forum_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
+
+
         }
 
         forum_button.setOnClickListener{

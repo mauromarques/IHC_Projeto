@@ -22,13 +22,13 @@
                 layout="@layout/summary_row" />
 
             <include
-                android:id="@+id/sub2"
+                android:id="@+id/sub22"
                 android:layout_width="match_parent"
                 android:layout_height="119dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
-                layout="@layout/summary_row" />
+                layout="@layout/summary_row"/>
 
             <include
                 android:id="@+id/sub3"
