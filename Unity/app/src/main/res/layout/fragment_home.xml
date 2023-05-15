@@ -27,7 +27,7 @@
 
                 <include
                     android:id="@+id/title_subtitle"
-                    layout="@layout/title_subtitle"/>
+                    layout="@layout/ongoing_courses_title"/>
                 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -45,18 +45,21 @@
                         android:orientation="horizontal">
 
                         <include
+                            android:id="@+id/subject1"
                             layout="@layout/basic_rectangle_row_home"
                             android:layout_height="match_parent"
                             android:layout_width="268dp"
                             android:layout_marginRight="15dp"/>
 
                         <include
+                            android:id="@+id/subject2"
                             layout="@layout/basic_rectangle_row_home"
                             android:layout_height="match_parent"
                             android:layout_width="268dp"
                             android:layout_marginRight="15dp"/>
 
                         <include
+                            android:id="@+id/subject3"
                             layout="@layout/basic_rectangle_row_home"
                             android:layout_height="match_parent"
                             android:layout_width="268dp"
@@ -67,7 +70,7 @@
 
                 <include
                     android:id="@+id/title_subtitle2"
-                    layout="@layout/title_subtitle"
+                    layout="@layout/most_popular_materials"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="40dp"
@@ -89,18 +92,21 @@
                         android:orientation="horizontal">
 
                         <include
+                            android:id="@+id/material1"
                             layout="@layout/basic_colored_material_row"
                             android:layout_height="match_parent"
                             android:layout_width="250dp"
                             android:layout_marginRight="15dp"/>
 
                         <include
+                            android:id="@+id/material2"
                             layout="@layout/basic_colored_material_row"
                             android:layout_height="match_parent"
                             android:layout_width="250dp"
                             android:layout_marginRight="15dp"/>
 
                         <include
+                            android:id="@+id/material3"
                             layout="@layout/basic_colored_material_row"
                             android:layout_height="match_parent"
                             android:layout_width="250dp"

@@ -63,7 +63,7 @@
     </fragment>
     <fragment
         android:id="@+id/forumFragment"
-        android:name="com.example.u_nity.ForumFragment"
+        android:name="com.example.u_nity.SubjectForumFragment"
         android:label="ForumFragment" >
         <action
             android:id="@+id/action_forumFragment_to_subjectFragment"

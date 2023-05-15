@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="IHC"
+                android:text="Most Popular Materials"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="21dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Human Computer Interaction"
+                android:text="All subjects"
                 android:textColor="#9C9C9C" />
 
         </LinearLayout>

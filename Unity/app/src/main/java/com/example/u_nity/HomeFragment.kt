@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
+import androidx.viewpager2.widget.ViewPager2
 
 class HomeFragment : Fragment() {
 
@@ -20,6 +22,19 @@ class HomeFragment : Fragment() {
 
         val button = view.findViewById<ImageButton>(R.id.backButton)
         button.alpha = 0F
+
+        val subject_title = view.findViewById<View>(R.id.title_subtitle)
+        val material_title = view.findViewById<View>(R.id.title_subtitle2)
+        val sub1 = view.findViewById<View>(R.id.subject1)
+        val sub2 = view.findViewById<View>(R.id.subject2)
+        val sub3 = view.findViewById<View>(R.id.subject3)
+
+        val title1 = sub1.findViewById<TextView>(R.id.title)
+        title1.text = "Human-Computer Interaction"
+        val title2 = sub2.findViewById<TextView>(R.id.title)
+        title2.text = "Computer Architecture 2"
+        val title3 = sub3.findViewById<TextView>(R.id.title)
+        title3.text = "System Analysis"
 
 
 

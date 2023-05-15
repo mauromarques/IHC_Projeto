@@ -27,10 +27,13 @@ class BrowseOnlineFragment : Fragment() {
             findNavController().navigate(R.id.action_browseOnlineFragment_to_subjectFragment)
         }
 
+        val mat_titles = arrayOf("Exam from last year", "Exercises Sheet Nº3 (Solved)", "Exam from last year (SOLVED)", "Slides 2023")
+
         val browse_layout = view.findViewById<LinearLayout>(R.id.browse_linear_layout)
 
         for (i in 0 until browse_layout.childCount) {
             val childView = browse_layout.getChildAt(i)
+
             childView.setOnClickListener {
                 findNavController().navigate(R.id.action_browseOnlineFragment_to_materialFragment)
             }

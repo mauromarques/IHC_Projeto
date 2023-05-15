@@ -10,10 +10,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintSet.Layout
 import androidx.navigation.fragment.findNavController
 
-class ForumFragment : Fragment() {
+class SubjectForumFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -24,9 +23,18 @@ class ForumFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_forum, container, false) //change to fragment_forum once it's done
-        val question1 = view.findViewById<LinearLayout>(R.id.question1)
-        val mine_button = view.findViewById<Button>(R.id.MINE)
-        val foryou_button = view.findViewById<Button>(R.id.FORYOU)
+        val segmented_search = view.findViewById<View>(R.id.segmented_search)
+        val question1 = view.findViewById<View>(R.id.question1)
+        val mine_button = segmented_search.findViewById<Button>(R.id.MINE)
+        val foryou_button = segmented_search.findViewById<Button>(R.id.FORYOU)
+
+        val backButton = view.findViewById<ImageButton>(R.id.backButton)
+        backButton.setOnClickListener {
+            findNavController().navigate(R.id.action_forumFragment_to_subjectFragment)
+        }
+
+        foryou_button.backgroundTintList = null
+        mine_button.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#EFEFEF"))
 
         foryou_button.setOnClickListener{
 

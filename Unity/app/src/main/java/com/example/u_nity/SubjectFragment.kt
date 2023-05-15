@@ -8,10 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.ImageButton
 import androidx.navigation.fragment.findNavController
 
 class SubjectFragment : Fragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,6 +50,7 @@ class SubjectFragment : Fragment() {
         }
 
         summary_button.setOnClickListener{
+
             val fragment = SubjectSummaryFragment()
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.course_frame_container,fragment)?.commit()

@@ -23,13 +23,24 @@ class StudyFragment : Fragment() {
         val button = view.findViewById<ImageButton>(R.id.backButton)
         val title = view.findViewById<TextView>(R.id.title)
         val subtitle = view.findViewById<TextView>(R.id.subtitle)
+        val sub1 = view.findViewById<View>(R.id.sub1)
+        val sub2 = view.findViewById<View>(R.id.sub2)
+        val sub3 = view.findViewById<View>(R.id.sub3)
         val sub4 = view.findViewById<View>(R.id.sub4)
+        val bar3 = sub3.findViewById<ProgressBar>(R.id.determinateBar)
         val bar4 = sub4.findViewById<ProgressBar>(R.id.determinateBar)
+        val title1 = sub1.findViewById<TextView>(R.id.title)
+        val title2 = sub2.findViewById<TextView>(R.id.title)
+        val title3 = sub3.findViewById<TextView>(R.id.title)
         val title4 = sub4.findViewById<TextView>(R.id.title)
         subtitle.text = "5 subjects enrolled"
         title.text = "Current Subjects"
+        bar3.progress = 50
         bar4.progress = 80
-        title4.text = "Computer Architecture 2"
+        title1.text = "Computer Architecture 2"
+        title2.text = "System Analysis"
+        title3.text = "Databases"
+        title4.text = "Human-Computer Interaction"
         sub4.setOnClickListener {
             Log.d("MAMAMIA", "CLICK")
             findNavController().navigate(R.id.action_studyFragment_to_subjectFragment)
