@@ -5,10 +5,77 @@
     android:layout_height="match_parent"
     tools:context=".CalendarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/top_bar" />
+
+        <include
+            android:id="@+id/study_plan_title"
+            layout="@layout/study_plan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <include
+                    layout="@layout/basic_colored_rectangle_row"
+                    android:layout_width="250dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="0dp" />
+
+                <include
+                    layout="@layout/basic_colored_rectangle_row"
+                    android:layout_width="250dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="0dp" />
+
+                <include
+                    layout="@layout/basic_colored_rectangle_row"
+                    android:layout_width="250dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <include
+            android:id="@+id/events_title"
+            layout="@layout/title_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
 
 </FrameLayout>
