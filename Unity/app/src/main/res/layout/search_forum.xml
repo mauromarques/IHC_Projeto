@@ -8,12 +8,12 @@
     <SearchView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="12dp"
         android:background="@drawable/rectangle_shape"
+        android:layout_marginRight="12dp"
         app:layout_constraintHorizontal_bias="0.859"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/MINE"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
     <Button
         android:id="@+id/MINE"
@@ -22,8 +22,7 @@
         android:layout_marginRight="12dp"
         android:background="@drawable/rectangle_shape"
         android:text="MINE"
-        app:layout_constraintRight_toLeftOf="@id/FORYOU"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toLeftOf="@id/FORYOU"/>
 
     <Button
         android:id="@+id/FORYOU"
@@ -31,7 +30,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_shape"
         android:text="FOR YOU"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

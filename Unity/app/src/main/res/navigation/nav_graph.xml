@@ -68,6 +68,12 @@
         <action
             android:id="@+id/action_forumFragment_to_subjectFragment"
             app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_forumFragment_to_forumFragmentUser"
+            app:destination="@id/forumFragmentUser" />
+        <action
+            android:id="@+id/action_forumFragment_to_subjectForumExpanded"
+            app:destination="@id/subjectForumExpanded" />
     </fragment>
     <fragment
         android:id="@+id/materialFragment"
@@ -87,6 +93,41 @@
             app:destination="@id/materialFragment" />
         <action
             android:id="@+id/action_homeFragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyHolderDBFragment"
+        android:name="com.example.u_nity.StudyHolderDBFragment"
+        android:label="fragment_study_holder_d_b"
+        tools:layout="@layout/fragment_study_holder_d_b" />
+    <fragment
+        android:id="@+id/subjectBDFragment"
+        android:name="com.example.u_nity.SubjectBDFragment"
+        android:label="fragment_subject_b_d"
+        tools:layout="@layout/fragment_subject_b_d" />
+    <fragment
+        android:id="@+id/subjectForumExpanded"
+        android:name="com.example.u_nity.SubjectForumExpanded"
+        android:label="SubjectForumExpanded" >
+        <action
+            android:id="@+id/action_subjectForumExpanded_to_forumFragment"
+            app:destination="@id/forumFragment" />
+        <action
+            android:id="@+id/action_subjectForumExpanded_to_forumFragmentUser"
+            app:destination="@id/forumFragmentUser" />
+        <action
+            android:id="@+id/action_subjectForumExpanded_to_forumFragment2"
+            app:destination="@id/forumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forumFragmentUser"
+        android:name="com.example.u_nity.ForumFragmentUser"
+        android:label="ForumFragmentUser" >
+        <action
+            android:id="@+id/action_forumFragmentUser_to_forumFragment"
+            app:destination="@id/forumFragment" />
+        <action
+            android:id="@+id/action_forumFragmentUser_to_subjectFragment"
             app:destination="@id/subjectFragment" />
     </fragment>
 </navigation>
