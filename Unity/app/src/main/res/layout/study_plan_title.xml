@@ -45,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="21dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Today, Feb 26, 2023"
+                    android:text="Today, May 16, 2023"
                     android:textColor="@color/progress_back_gray"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView2" />
