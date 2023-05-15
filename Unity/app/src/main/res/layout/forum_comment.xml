@@ -2,13 +2,17 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
-        android:layout_width="320dp"
+        android:layout_width="match_parent"
         android:layout_height="180dp">
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
         <LinearLayout
+            android:id="@+id/comment_layout"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="@drawable/rectangle_shape"
+            android:background="#D9D9D9"
             android:orientation="vertical">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="fill_parent"
@@ -34,28 +38,12 @@
                     app:layout_constraintLeft_toRightOf="@id/user"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
-
-                <TextView
-                    android:id="@+id/status"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle_shape"
-                    android:backgroundTint="#433A3F"
-                    android:text="POSTED"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="10dp"
-
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/question_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TITULO"
@@ -65,7 +53,6 @@
                     android:textSize="14dp"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/questionBody"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Sub-titulo"
@@ -100,22 +87,27 @@
                     app:layout_constraintLeft_toRightOf="@id/text_votes"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
-                <ImageView
-                    android:id="@+id/message_icon"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_comment"
-                    android:layout_marginLeft="12dp"
+                <View
+
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     app:layout_constraintLeft_toRightOf="@id/icon_down"
+                    app:layout_constraintRight_toLeftOf="@id/attachment"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
+
                 <TextView
+                    android:id="@+id/attachment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="11"
+                    android:text="1 Attachment"
                     android:textSize="16dp"
                     android:layout_marginLeft="5dp"
-                    app:layout_constraintLeft_toRightOf="@id/message_icon"
+                    app:layout_constraintLeft_toRightOf="@id/line"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
                 <TextView
