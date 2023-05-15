@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 class SubjectStudyFragment : Fragment() {
@@ -45,6 +46,14 @@ class SubjectStudyFragment : Fragment() {
                 findNavController().navigate(R.id.action_subjectFragment_to_materialFragment2)
             }
         }
+
+        val lib1 = view.findViewById<View>(R.id.lib1)
+        lib1.findViewById<TextView>(R.id.textView5).text = "Nielsen Heuristics Book"
+        lib1.findViewById<TextView>(R.id.resourceName).text = "(PDF)"
+
+        val lib2 = view.findViewById<View>(R.id.lib2)
+        lib2.findViewById<TextView>(R.id.textView5).text = "Slides lecture 1"
+        lib2.findViewById<TextView>(R.id.resourceName).text = "(PPTX)"
 
 
         return view

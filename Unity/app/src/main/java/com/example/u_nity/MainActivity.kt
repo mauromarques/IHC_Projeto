@@ -7,6 +7,7 @@ import com.example.u_nity.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
+    lateinit var tabLayout : TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupTabBar() {
         val vp = findViewById<ViewPager2>(R.id.viewPager)
-        val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
+        tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val adapter = TabPageAdapter(this, tabLayout.tabCount)
         vp.adapter = adapter
         vp.isUserInputEnabled = false

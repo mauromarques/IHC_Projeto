@@ -32,6 +32,10 @@ class MaterialFragment : Fragment() {
         downloadButton.setOnClickListener {
             withButtonCentered(view)
         }
+        val addButton = view.findViewById<View>(R.id.add_library)
+        addButton.setOnClickListener {
+            withButtonCentered2(view)
+        }
         var fill = false
         val heartButton = view.findViewById<ImageButton>(R.id.heart)
         heartButton.setOnClickListener {
@@ -68,5 +72,22 @@ class MaterialFragment : Fragment() {
         layoutParams.weight = 10f
         btnPositive.layoutParams = layoutParams
         btnNegative.layoutParams = layoutParams
+    }
+
+    fun withButtonCentered2(view: View) {
+
+        val alertDialog = AlertDialog.Builder(activity).create()
+        alertDialog.setTitle("Added to library")
+        alertDialog.setMessage("Check it out")
+
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK"
+        ) { dialog, which -> dialog.dismiss() }
+        alertDialog.show()
+
+        val btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE)
+
+        val layoutParams = btnPositive.layoutParams as LinearLayout.LayoutParams
+        layoutParams.weight = 10f
+        btnPositive.layoutParams = layoutParams
     }
 }

@@ -31,6 +31,10 @@ class LibraryFragment : Fragment() {
         res2.findViewById<TextView>(R.id.textView5).text = "Theory Exercise Sheet 2 "
         res2.findViewById<TextView>(R.id.resourceName).text = "(PDF)"
 
+        val res3 = view.findViewById<View>(R.id.res3)
+        res3.findViewById<TextView>(R.id.textView5).text = "Slides Lecture 1"
+        res3.findViewById<TextView>(R.id.resourceName).text = "(PPTX)"
+
         val backButton = view.findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {
             findNavController().navigate(R.id.action_libraryFragment_to_subjectFragment)

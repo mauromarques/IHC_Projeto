@@ -106,6 +106,7 @@
                 android:paddingBottom="20dp">
 
                 <include
+                    android:id="@+id/lib1"
                     layout="@layout/basic_colored_material_row"
                     android:layout_width="250dp"
                     android:layout_height="110dp"
@@ -114,20 +115,13 @@
                     android:layout_marginRight="0dp" />
 
                 <include
+                    android:id="@+id/lib2"
                     layout="@layout/basic_colored_material_row"
                     android:layout_width="250dp"
                     android:layout_height="110dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="0dp" />
-
-                <include
-                    layout="@layout/basic_colored_material_row"
-                    android:layout_width="250dp"
-                    android:layout_height="110dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp" />
 
             </LinearLayout>
 

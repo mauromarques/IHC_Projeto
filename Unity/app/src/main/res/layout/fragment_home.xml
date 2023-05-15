@@ -65,6 +65,13 @@
                             android:layout_width="268dp"
                             android:layout_marginRight="15dp"/>
 
+                        <Button
+                            android:id="@+id/subject4"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="See all"
+                            android:background="@drawable/black_rectangle_border"/>
+
                     </LinearLayout>
                 </HorizontalScrollView>
 

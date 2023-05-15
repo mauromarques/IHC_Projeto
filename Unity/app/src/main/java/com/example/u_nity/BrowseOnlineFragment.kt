@@ -31,7 +31,7 @@ class BrowseOnlineFragment : Fragment() {
 
         val browse_layout = view.findViewById<LinearLayout>(R.id.browse_linear_layout)
 
-        for (i in 0 until browse_layout.childCount) {
+        for (i in 1 until browse_layout.childCount) {
             val childView = browse_layout.getChildAt(i)
 
             childView.setOnClickListener {

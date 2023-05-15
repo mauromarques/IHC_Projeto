@@ -12,7 +12,7 @@ class TabPageAdapter(activity: FragmentActivity, private val tabCount: Int): Fra
 
     override fun createFragment(position: Int): Fragment {
         return when (position){
-            0 -> HomeFragment()
+            0 -> HomeHolderFragment()
             1 -> CalendarFragment()
             2 -> StudyHolderFragment()
             3 -> PersonFragment()
