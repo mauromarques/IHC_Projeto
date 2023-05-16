@@ -32,6 +32,7 @@
                 android:paddingBottom="20dp">
 
                 <include
+                    android:id="@+id/plan1"
                     layout="@layout/basic_colored_rectangle_row"
                     android:layout_width="250dp"
                     android:layout_height="110dp"
@@ -40,6 +41,7 @@
                     android:layout_marginRight="0dp" />
 
                 <include
+                    android:id="@+id/plan2"
                     layout="@layout/basic_colored_rectangle_row"
                     android:layout_width="250dp"
                     android:layout_height="110dp"
@@ -48,6 +50,7 @@
                     android:layout_marginRight="0dp" />
 
                 <include
+                    android:id="@+id/plan3"
                     layout="@layout/basic_colored_rectangle_row"
                     android:layout_width="250dp"
                     android:layout_height="110dp"
@@ -121,7 +124,7 @@
                     android:layout_height="110dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="0dp" />
+                    android:layout_marginRight="20dp" />
 
             </LinearLayout>
 

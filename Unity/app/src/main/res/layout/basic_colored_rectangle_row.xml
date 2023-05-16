@@ -21,7 +21,7 @@
                     android:layout_height="22dp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/time"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_marginLeft="15dp"
@@ -32,6 +32,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/title_plan"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_marginLeft="15dp"
@@ -42,6 +43,7 @@
                     android:textSize="13sp" />
 
                 <TextView
+                    android:id="@+id/date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"

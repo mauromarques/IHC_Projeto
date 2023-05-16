@@ -55,6 +55,20 @@ class SubjectStudyFragment : Fragment() {
         lib2.findViewById<TextView>(R.id.textView5).text = "Slides lecture 1"
         lib2.findViewById<TextView>(R.id.resourceName).text = "(PPTX)"
 
+        val plan1 = view.findViewById<View>(R.id.plan1)
+        plan1.findViewById<TextView>(R.id.time).text = "13:00 - 13:40"
+        plan1.findViewById<TextView>(R.id.title_plan).text = "Prepare IHC presentation"
+        plan1.findViewById<TextView>(R.id.date).text = "26/04/2023 - 02/06/2023"
+
+        val plan2 = view.findViewById<View>(R.id.plan2)
+        plan2.findViewById<TextView>(R.id.time).text = "14:00 - 16:00"
+        plan2.findViewById<TextView>(R.id.title_plan).text = "Finish app for delivery"
+        plan2.findViewById<TextView>(R.id.date).text = "10/05/2023 - 24/05/2023"
+
+        val plan3 = view.findViewById<View>(R.id.plan3)
+        plan3.findViewById<TextView>(R.id.time).text = "18:00 - 19:30"
+        plan3.findViewById<TextView>(R.id.title_plan).text = "Study for exam"
+        plan3.findViewById<TextView>(R.id.date).text = "15/05/2023 - 11/06/2023"
 
         return view
     }

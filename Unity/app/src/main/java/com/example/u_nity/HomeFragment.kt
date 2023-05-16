@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.tabs.TabLayout
 
 class HomeFragment : Fragment() {
@@ -47,6 +48,14 @@ class HomeFragment : Fragment() {
             val tab = act.tabLayout.getTabAt(2)
             tab!!.select()
         }
+
+        val mat2 = view.findViewById<View>(R.id.material2)
+        mat2.findViewById<TextView>(R.id.textView5).text = "IHC"
+        mat2.findViewById<TextView>(R.id.resourceName).text = "Nielsen Heuristics Book"
+
+        val mat3 = view.findViewById<View>(R.id.material3)
+        mat3.findViewById<TextView>(R.id.textView5).text = "BD"
+        mat3.findViewById<TextView>(R.id.resourceName).text = "SQL Cheat Sheet"
 
         return view
 
