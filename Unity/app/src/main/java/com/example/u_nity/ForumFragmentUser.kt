@@ -18,9 +18,9 @@ import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
 
-class AddQuestionDialogFragment : DialogFragment() {
+class ForumFragmentUser : Fragment() {
 
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+    fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val inflater = requireActivity().layoutInflater
         val view = inflater.inflate(R.layout.question_preview, null)
         val fragment = inflater.inflate(R.layout.fragment_forum_user,null)
@@ -44,9 +44,6 @@ class AddQuestionDialogFragment : DialogFragment() {
 
         return dialog
     }
-}
-class ForumFragmentUser : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -59,8 +56,8 @@ class ForumFragmentUser : Fragment() {
             findNavController().navigate(R.id.action_forumFragmentUser_to_subjectFragment)
         }
         val add_question1 = view.findViewById<RelativeLayout>(R.id.add_question)
-        val mine_button = view.findViewById<Button>(R.id.MINE)
-        val foryou_button = view.findViewById<Button>(R.id.FORYOU)
+        val mine_button = view.findViewById<Button>(R.id.FILTERS)
+        val foryou_button = view.findViewById<Button>(R.id.FILTERS)
 
         mine_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#000000")))
         foryou_button.setTextColor(ColorStateList.valueOf(Color.parseColor("#B0B0B0")))

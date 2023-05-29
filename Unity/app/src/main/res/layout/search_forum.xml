@@ -7,29 +7,19 @@
 
     <SearchView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/rectangle_shape"
         android:layout_marginRight="12dp"
-        app:layout_constraintHorizontal_bias="0.859"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/MINE"
+        app:layout_constraintRight_toLeftOf="@id/FILTERS"
         />
 
     <Button
-        android:id="@+id/MINE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="12dp"
-        android:background="@drawable/rectangle_shape"
-        android:text="MINE"
-        app:layout_constraintRight_toLeftOf="@id/FORYOU"/>
-
-    <Button
-        android:id="@+id/FORYOU"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rectangle_shape"
-        android:text="FOR YOU"
+        android:id="@+id/FILTERS"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_filter"
+        android:entries="@array/filter_options"
         app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
