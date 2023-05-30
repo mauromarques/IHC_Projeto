@@ -11,10 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/top_bar"
-            layout="@layout/top_bar"/>
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -24,10 +20,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingBottom="20dp">
-
-                <include
-                    android:id="@+id/library_title"
-                    layout="@layout/library_title"/>
 
                 <ScrollView
                     android:layout_width="match_parent"
@@ -43,6 +35,31 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp">
+
+                            <include
+                                android:id="@+id/library_upload_button"
+                                layout="@layout/library_upload_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <include
+                                android:id="@+id/library_search_button"
+                                layout="@layout/library_search_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                app:layout_constraintStart_toEndOf="@+id/library_upload_button"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <include
                             android:id="@+id/res1"

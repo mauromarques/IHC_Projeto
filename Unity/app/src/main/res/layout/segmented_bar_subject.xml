@@ -33,7 +33,7 @@
                 android:backgroundTint="#EFEFEF"
                 android:fontFamily="@font/poppins_bold"
                 android:padding="0dp"
-                android:text="Study"
+                android:text="LIBRARY"
                 android:textColor="#B0B0B0" />
             <Button
                 android:id="@+id/forum_button"

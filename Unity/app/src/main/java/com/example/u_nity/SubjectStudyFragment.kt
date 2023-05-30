@@ -28,7 +28,6 @@ class SubjectStudyFragment : Fragment() {
         val lib_title = view.findViewById<View>(R.id.library_title)
         val see_all = lib_title.findViewById<View>(R.id.library_see_all)
         val browse_button = view.findViewById<View>(R.id.library_search_button)
-        val upload_button = view.findViewById<View>(R.id.library_upload_button)
 
         browse_button.setOnClickListener{
             findNavController().navigate(R.id.action_subjectFragment_to_browseOnlineFragment)
@@ -55,20 +54,6 @@ class SubjectStudyFragment : Fragment() {
         lib2.findViewById<TextView>(R.id.textView5).text = "Slides lecture 1"
         lib2.findViewById<TextView>(R.id.resourceName).text = "(PPTX)"
 
-        val plan1 = view.findViewById<View>(R.id.plan1)
-        plan1.findViewById<TextView>(R.id.time).text = "13:00 - 13:40"
-        plan1.findViewById<TextView>(R.id.title_plan).text = "Prepare IHC presentation"
-        plan1.findViewById<TextView>(R.id.date).text = "26/04/2023 - 02/06/2023"
-
-        val plan2 = view.findViewById<View>(R.id.plan2)
-        plan2.findViewById<TextView>(R.id.time).text = "14:00 - 16:00"
-        plan2.findViewById<TextView>(R.id.title_plan).text = "Finish app for delivery"
-        plan2.findViewById<TextView>(R.id.date).text = "10/05/2023 - 24/05/2023"
-
-        val plan3 = view.findViewById<View>(R.id.plan3)
-        plan3.findViewById<TextView>(R.id.time).text = "18:00 - 19:30"
-        plan3.findViewById<TextView>(R.id.title_plan).text = "Study for exam"
-        plan3.findViewById<TextView>(R.id.date).text = "15/05/2023 - 11/06/2023"
 
         return view
     }

@@ -30,7 +30,7 @@ class SubjectSummaryFragment : Fragment() {
         val sub3 = view.findViewById<View>(R.id.sub3)
         val image3 = sub3.findViewById<ImageView>(R.id.imageB)
         image3.setImageResource(R.drawable.s3)
-        sub3.findViewById<TextView>(R.id.title).text = "PERFORMANCE"
+        sub3.findViewById<TextView>(R.id.title).text = "GRADING"
         sub3.findViewById<TextView>(R.id.sub11).text = "T - 5/7"
         sub3.findViewById<TextView>(R.id.sub23).text = "P - 10/12"
 

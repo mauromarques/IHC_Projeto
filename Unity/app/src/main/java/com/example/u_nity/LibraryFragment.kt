@@ -35,25 +35,20 @@ class LibraryFragment : Fragment() {
         res3.findViewById<TextView>(R.id.textView5).text = "Slides Lecture 1"
         res3.findViewById<TextView>(R.id.resourceName).text = "(PPTX)"
 
-        val backButton = view.findViewById<ImageButton>(R.id.backButton)
-        backButton.setOnClickListener {
-            findNavController().navigate(R.id.action_libraryFragment_to_subjectFragment)
-        }
-
-        val lib_title = view.findViewById<View>(R.id.library_title)
-        val see_all = lib_title.findViewById<View>(R.id.library_see_all)
-
-        see_all.alpha = 0F
-
         val mat_layout = view.findViewById<LinearLayout>(R.id.library_material_layout)
 
         for (i in 0 until mat_layout.childCount) {
             val childView = mat_layout.getChildAt(i)
-            childView.setOnClickListener {
-                findNavController().navigate(R.id.action_libraryFragment_to_materialFragment)
+            if(i == 0){
+                childView.setOnClickListener {
+                    findNavController().navigate(R.id.action_subjectFragment_to_browseOnlineFragment)
+                }
+            } else {
+                childView.setOnClickListener {
+                    findNavController().navigate(R.id.action_subjectFragment_to_materialFragment2)
+                }
             }
         }
-
         return view
     }
 }

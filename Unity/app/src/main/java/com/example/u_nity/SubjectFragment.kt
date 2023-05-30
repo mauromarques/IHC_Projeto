@@ -37,7 +37,7 @@ class SubjectFragment : Fragment() {
         val forum_button = segmented_bar.findViewById<Button>(R.id.forum_button)
 
         study_button.setOnClickListener{
-            val fragment = SubjectStudyFragment()
+            val fragment = LibraryFragment()
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.course_frame_container,fragment)?.commit()
 
